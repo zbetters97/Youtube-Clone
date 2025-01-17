@@ -90,13 +90,17 @@
 .voice-icon {
   height: 24px;
 }
+#app-icon:hover .tooltip {
+  opacity: 1;
+}
+
 /* TARGETS .tooltip ON HOVER */
 .search-btn:hover .tooltip,
 .voice-search-btn:hover .tooltip,
 .upload-icon-container:hover .tooltip,
-.apps-icon:hover .tooltip,
-.notif-icon:hover .tooltip,
-.current-user-icon:hover .tooltip {
+.apps-icon-container:hover .tooltip,
+.notif-container:hover .tooltip,
+.current-user-container:hover .tooltip {
   opacity: 1;
 }
 .search-btn .tooltip,
