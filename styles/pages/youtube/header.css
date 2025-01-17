@@ -57,7 +57,10 @@
 
 .search-btn,
 .voice-search-btn,
-.upload-icon-container {
+.upload-icon-container,
+.apps-icon-container,
+.notif-container,
+.current-user-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,12 +92,20 @@
 }
 /* TARGETS .tooltip ON HOVER */
 .search-btn:hover .tooltip,
-.voice-search-btn:hover .tooltip {
+.voice-search-btn:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-icon:hover .tooltip,
+.notif-icon:hover .tooltip,
+.current-user-icon:hover .tooltip {
   opacity: 1;
 }
 .search-btn .tooltip,
 .voice-search-btn .tooltip,
-.upload-icon .tooltip {
+.upload-icon-container .tooltip,
+.apps-icon-container .tooltip,
+.notif-container .tooltip,
+.current-user-container .tooltip {
+  font-family: Roboto, Arial;
   position: absolute;
   color: white;
   background-color: rgb(96, 96, 96);
@@ -116,9 +127,6 @@
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0; /* DOES NOT SHRINK WITH SCREEN RESIZE */
-}
-
-.upload-icon-container {
 }
 
 .upload-icon {
