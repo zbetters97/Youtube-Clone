@@ -1,60 +1,17 @@
-/*
-MOST SPECIFIC SELECTOR GETS PRIORITY
-
-MARGIN: 
-  Space around element
-PADDING: 
-  Space inside element
-OBJECT-FIT: 
-  Determines how an image is scaled within its boundaries
-OBJECT-FIT CONTAIN: 
-  Scales image to fit within its  boundaries
-OBJECT-POSITION: 
-  Positions image to specified area within boundaries
-#fr: take up remaining space in grid 
-  # = ratio of remaining space
-FLEX #: 
-  # = ratio of remaining space
-Z-INDEX: 
-  Decides which elements appear on-top of eachother
-
-BOX-SHADOW: X, Y, BLUR, COLOR
-  :hover: On hover
-  :active: On click
-
-POSITION:
-  static: default
-  fixed: element placed on the browser window
-    -does not move when scrolling 
-  aboslute: element placed on the page
-    -moves when scrolling
-  relative: nested "absolute" elements are placed in      
-    relation to this element, not the page
-
-DISPLAY:
-  block: takes entire line (ex: <p>, <div>)
-  inline-block: takes only space needed (ex: <img>, <input>)
-  inline: appears within a line of text (ex: <strong>)
-
-(Side x Top)
-DEFAULT MARGIN:
-  <body> 8 x 8
-  <p>: 0 x 14
-DEFAULT PADDING: 
-  <button>: 6 x 1 
-*/
+:root {
+  --light-gray: rgb(240, 240, 240);
+  --dark-gray: rgb(96, 96, 96);
+  --yt-red: rgb(214, 29, 29);
+}
 
 * {
   margin: 0;
   padding: 0;
 }
 body {
+  font-family: Roboto, Arial; /* INHERITED BY CHILD ELEMENTS */
   background-color: rgb(250, 250, 250);
   padding-top: 80px;
   padding-left: 90px;
   padding-right: 30px;
-}
-
-p {
-  font-family: Roboto, Arial;
 }

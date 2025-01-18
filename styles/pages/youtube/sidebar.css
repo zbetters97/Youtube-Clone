@@ -20,14 +20,13 @@
   cursor: pointer;
 }
 .sidebar-link:hover {
-  background-color: rgb(240, 240, 240);
+  background-color: var(--light-gray);
 }
 .sidebar-link img {
   height: 30px;
   margin-bottom: 4px;
 }
 .sidebar-link div {
-  font-family: Roboto, Arial;
   font-size: 10px;
   text-align: center;
 }
