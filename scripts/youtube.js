@@ -29,34 +29,34 @@ function renderVideoGridHTML() {
     const videoDatePosted = getTimeSince(new Date(video.datePosted));
 
     videoGridHTML += `
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="${thumbnail}" />
-        <div class="video-time">${duration}</div>
-      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="${thumbnail}" />
+          <div class="video-time">${duration}</div>
+        </div>
 
-      <div class="video-info-grid">
-        <div class="channel-picture-container">
-          <img class="profile-picture" src="${channelIcon}" />
-          <div class="channel-tooltip">              
-            <img src="${channelIcon}" />
-            <div>
-              <p class="channel-tooltip-name">${channelName}</p>
-              <p class="channel-tooltip-subs">${subscriberCount} subscribers</p>
-            </div>              
+        <div class="video-info-grid">
+          <div class="channel-picture-container">
+            <img class="profile-picture" src="${channelIcon}" />
+            <div class="channel-tooltip">              
+              <img src="${channelIcon}" />
+              <div>
+                <p class="channel-tooltip-name">${channelName}</p>
+                <p class="channel-tooltip-subs">${subscriberCount} subscribers</p>
+              </div>              
+            </div>
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              ${videoTitle}
+            </p>            
+            <p class="video-author">${channelName}</p>
+            <p class="video-stats">${videoViewCount} views &#183; ${videoDatePosted}</p>
           </div>
         </div>
-
-        <div class="video-info">
-          <p class="video-title">
-            ${videoTitle}
-          </p>            
-          <p class="video-author">${channelName}</p>
-          <p class="video-stats">${videoViewCount} views &#183; ${videoDatePosted}</p>
-        </div>
       </div>
-    </div>
-  `;
+    `;
   });
 
   $(".js-video-grid").html(videoGridHTML);
